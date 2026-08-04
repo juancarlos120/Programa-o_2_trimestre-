@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>O Game do Saber</title>
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -21,7 +24,7 @@ body{
 header{
     background:linear-gradient(90deg,#0066ff,#00b4d8);
     text-align:center;
-    padding:30px;
+    padding:35px;
 }
 
 header h1{
@@ -34,152 +37,238 @@ header p{
 }
 
 .container{
-    width:90%;
     max-width:1200px;
     margin:auto;
-    padding:30px 0;
+    padding:30px 20px;
 }
 
 .card{
-    display:flex;
-    align-items:center;
-    gap:20px;
+
     background:#1b263b;
-    margin-bottom:30px;
-    padding:20px;
+
+    margin-bottom:35px;
+
     border-radius:15px;
+
+    overflow:hidden;
+
     transition:.3s;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.35);
+
 }
 
 .card:hover{
-    transform:scale(1.02);
-    box-shadow:0 0 20px cyan;
+
+    transform:translateY(-5px);
+
+    box-shadow:0 0 25px #00d4ff;
+
 }
 
 .card img{
-    width:300px;
-    height:200px;
+
+    width:100%;
+
+    height:400px;
+
     object-fit:cover;
-    border-radius:12px;
+
+    display:block;
+
 }
 
 .texto{
-    flex:1;
+
+    padding:25px;
+
 }
 
 .texto h2{
+
     color:#00d4ff;
-    margin-bottom:10px;
+
+    margin-bottom:15px;
+
+    font-size:30px;
+
 }
 
 .texto p{
-    line-height:1.6;
+
+    color:#d8d8d8;
+
     text-align:justify;
+
+    line-height:1.8;
+
+    font-size:18px;
+
 }
 
 footer{
+
     background:#08111f;
+
     text-align:center;
-    padding:20px;
-    margin-top:30px;
+
+    padding:25px;
+
+    margin-top:40px;
+
 }
 
-@media(max-width:800px){
-
-.card{
-    flex-direction:column;
-}
+@media(max-width:768px){
 
 .card img{
-    width:100%;
+
+    height:250px;
+
+}
+
+.texto h2{
+
+    font-size:24px;
+
+}
+
+.texto p{
+
+    font-size:16px;
+
 }
 
 }
+
 </style>
 
 </head>
+
 <body>
 
 <header>
+
 <h1>🎮 O Game do Saber</h1>
+
 <p>A Escola que Temos e a Escola que Queremos</p>
+
 </header>
 
 <div class="container">
 
 <div class="card">
-<img src="primero.JPG" alt="">
+
+<img src="primero.JPG" alt="A Escola que Temos">
+
 <div class="texto">
+
 <h2>Fase 1 - A Escola que Temos</h2>
+
 <p>
 Nossa escola possui professores dedicados, salas de aula, biblioteca e espaços para aprender.
 Mesmo com desafios, ela é um ambiente importante para construir conhecimento e formar cidadãos.
 </p>
+
 </div>
+
 </div>
 
 <div class="card">
-<img src="pane1.JPG" alt="">
+
+<img src="pane1.JPG" alt="Aprender Juntos">
+
 <div class="texto">
+
 <h2>Fase 2 - Aprender Juntos</h2>
+
 <p>
 O aprendizado acontece quando alunos e professores trabalham em equipe,
 compartilhando ideias, experiências e desenvolvendo novas habilidades.
 </p>
+
 </div>
+
 </div>
 
 <div class="card">
-<img src="panel 2.JPG" alt="">
+
+<img src="panel 2.JPG" alt="Tecnologia">
+
 <div class="texto">
+
 <h2>Fase 3 - Tecnologia</h2>
+
 <p>
 A escola que queremos utiliza computadores, tablets, internet e recursos digitais
 para tornar as aulas mais criativas, interessantes e interativas.
 </p>
+
 </div>
+
 </div>
 
 <div class="card">
-<img src="hh.jpg" alt="">
+
+<img src="hh.jpg" alt="Inclusão">
+
 <div class="texto">
+
 <h2>Fase 4 - Inclusão</h2>
+
 <p>
 Todos os estudantes devem ser respeitados, valorizados e ter oportunidades iguais,
 independentemente de suas diferenças.
 </p>
+
 </div>
+
 </div>
 
 <div class="card">
-<img src="gg.png" alt="">
+
+<img src="gg.png" alt="Criatividade">
+
 <div class="texto">
+
 <h2>Fase 5 - Criatividade</h2>
+
 <p>
-As aulas são apenas expositivas, sem projetos, jogos educativos,
- experiências ou trabalhos em grupo, tornando a aprendizagem mais monótona,
- desmotivadora e pouco significativa para os estudantes.
+As aulas deixam de ser apenas expositivas e passam a incluir projetos,
+jogos educativos, experiências práticas e trabalhos em grupo,
+tornando a aprendizagem mais dinâmica, motivadora e significativa.
 </p>
+
 </div>
+
 </div>
 
 <div class="card">
-<img src="ll.jpg" alt="">
+
+<img src="ll.jpg" alt="Escola que Queremos">
+
 <div class="texto">
+
 <h2>Fase Final - A Escola que Queremos</h2>
+
 <p>
 Sonhamos com uma escola moderna, segura, sustentável, inclusiva e inovadora,
 onde cada estudante tenha oportunidades para aprender, crescer e realizar seus sonhos.
 </p>
+
 </div>
+
 </div>
 
 </div>
 
 <footer>
+
 <h3>🏆 O Game do Saber</h3>
+
 <p>Aprender é a maior conquista!</p>
+
 </footer>
 
 </body>
+
 </html>
