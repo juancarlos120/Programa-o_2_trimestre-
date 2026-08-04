@@ -1,180 +1,185 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game do Saber & O Futuro da Escola</title>
-    <style>
-        :root {
-            --primary: #2563eb;
-            --secondary: #10b981;
-            --dark: #1e293b;
-            --light: #f8fafc;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O Game do Saber</title>
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: var(--light);
-            color: var(--dark);
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
-        header {
-            background: linear-gradient(135deg, var(--primary), #4f46e5);
-            color: white;
-            text-align: center;
-            padding: 2rem 1rem;
-        }
+body{
+    background:#0d1b2a;
+    color:white;
+}
 
-        main {
-            max-width: 1100px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
+header{
+    background:linear-gradient(90deg,#0066ff,#00b4d8);
+    text-align:center;
+    padding:30px;
+}
 
-        section {
-            background: white;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
+header h1{
+    font-size:40px;
+}
 
-        h2 {
-            color: var(--primary);
-            border-bottom: 2px solid #e2e8f0;
-            padding-bottom: 0.5rem;
-        }
+header p{
+    margin-top:10px;
+    font-size:18px;
+}
 
-        .grid-imagens {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:30px 0;
+}
 
-        .card-img {
-            background: #fff;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            transition: transform 0.2s;
-        }
+.card{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    background:#1b263b;
+    margin-bottom:30px;
+    padding:20px;
+    border-radius:15px;
+    transition:.3s;
+}
 
-        .card-img:hover {
-            transform: translateY(-5px);
-        }
+.card:hover{
+    transform:scale(1.02);
+    box-shadow:0 0 20px cyan;
+}
 
-        .card-img img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            display: block;
-        }
+.card img{
+    width:300px;
+    height:200px;
+    object-fit:cover;
+    border-radius:12px;
+}
 
-        .card-img p {
-            padding: 1rem;
-            margin: 0;
-            font-weight: bold;
-            text-align: center;
-            font-size: 0.9rem;
-        }
+.texto{
+    flex:1;
+}
 
-        footer {
-            text-align: center;
-            padding: 1.5rem;
-            background: var(--dark);
-            color: white;
-            margin-top: 4rem;
-        }
-    </style>
+.texto h2{
+    color:#00d4ff;
+    margin-bottom:10px;
+}
+
+.texto p{
+    line-height:1.6;
+    text-align:justify;
+}
+
+footer{
+    background:#08111f;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+@media(max-width:800px){
+
+.card{
+    flex-direction:column;
+}
+
+.card img{
+    width:100%;
+}
+
+}
+</style>
+
 </head>
 <body>
 
-    <header>
-        <h1>Projeto: Game do Saber</h1>
-        <p>Refletindo sobre a educação: A escola que temos e a escola que queremos</p>
-    </header>
+<header>
+<h1>🎮 O Game do Saber</h1>
+<p>A Escola que Temos e a Escola que Queremos</p>
+</header>
 
-               <!-- Imagem 1 -->
-                <div class="card-img">
-                    <img src="primero.JPG" alt="Interface do Game do Saber">
-                    <p>1. Interface do Game do Saber</p>
-                </div> 
+<div class="container">
 
-    <main>
-        
-        <section id="game-saber">
-            <h2>🎮 O Game do Saber</h2>
-            <p>O Game do Saber é uma ferramenta pedagógica inovadora que utiliza a gamificação para transformar o aprendizado. Através de desafios, quizzes e dinâmicas interativas, os estudantes absorvem conteúdos complexos de forma leve, divertida e altamente engajadora.</p>
-        </section>
+<div class="card">
+<img src="primero.JPG" alt="">
+<div class="texto">
+<h2>Fase 1 - A Escola que Temos</h2>
+<p>
+Nossa escola possui professores dedicados, salas de aula, biblioteca e espaços para aprender.
+Mesmo com desafios, ela é um ambiente importante para construir conhecimento e formar cidadãos.
+</p>
+</div>
+</div>
 
+<div class="card">
+<img src="pane1.JPG" alt="">
+<div class="texto">
+<h2>Fase 2 - Aprender Juntos</h2>
+<p>
+O aprendizado acontece quando alunos e professores trabalham em equipe,
+compartilhando ideias, experiências e desenvolvendo novas habilidades.
+</p>
+</div>
+</div>
 
-        <section id="escola-temos">
-            <h2>🏫 A Escola que Temos</h2>
-            <p>Atualmente, a escola tradicional ainda foca muito na memorização, em fileiras fixas e em conteúdos fragmentados. Muitas vezes, esse modelo desmotiva os alunos e não acompanha a velocidade das transformações tecnológicas do mundo moderno.</p>
-        </section>
-         
-                <!-- Imagem 2 -->
-                <div class="card-img">
-                    <img src="pane1.JPG" alt="Alunos jogando e aprendendo">
-                    <p>2. Gamificação em Sala de Aula</p>
-                </div>
+<div class="card">
+<img src="panel 2.JPG" alt="">
+<div class="texto">
+<h2>Fase 3 - Tecnologia</h2>
+<p>
+A escola que queremos utiliza computadores, tablets, internet e recursos digitais
+para tornar as aulas mais criativas, interessantes e interativas.
+</p>
+</div>
+</div>
 
-        <section id="escola-queremos">
-            <h2>🚀 A Escola que Queremos</h2>
-            <p>Queremos uma escola viva, conectada, criativa e inclusiva. Um espaço onde a tecnologia seja aliada do conhecimento, onde haja autonomia, debates, projetos práticos e onde aprender seja tão empolgante quanto jogar o Game do Saber.</p>
-        </section>
+<div class="card">
+<img src="hh.jpg" alt="">
+<div class="texto">
+<h2>Fase 4 - Inclusão</h2>
+<p>
+Todos os estudantes devem ser respeitados, valorizados e ter oportunidades iguais,
+independentemente de suas diferenças.
+</p>
+</div>
+</div>
 
-             <!-- Imagem 3 -->
-                <div class="card-img">
-                    <img src="panel 2.JPG" alt="A sala de aula tradicional">
-                    <p>3. Desafios da Escola Atual</p>
-                </div>
+<div class="card">
+<img src="gg.png" alt="">
+<div class="texto">
+<h2>Fase 5 - Criatividade</h2>
+<p>
+As aulas são apenas expositivas, sem projetos, jogos educativos,
+ experiências ou trabalhos em grupo, tornando a aprendizagem mais monótona,
+ desmotivadora e pouco significativa para os estudantes.
+</p>
+</div>
+</div>
 
+<div class="card">
+<img src="ll.jpg" alt="">
+<div class="texto">
+<h2>Fase Final - A Escola que Queremos</h2>
+<p>
+Sonhamos com uma escola moderna, segura, sustentável, inclusiva e inovadora,
+onde cada estudante tenha oportunidades para aprender, crescer e realizar seus sonhos.
+</p>
+</div>
+</div>
 
-        <section id="galeria">
-            <h2>📸 Galeria de Imagens do Projeto</h2>
-            
-            <div class="grid-imagens">
-                
- 
-                <!-- Imagem 4 -->
-                <div class="card-img">
-                    <img src="refreitorio.jpg" alt="Tecnologia na educação">
-                    <p>4. Inovação e Tecnologia</p>
-                </div>
+</div>
 
-                <!-- Imagem 5 -->
-                <div class="card-img">
-                    <img src="sala de aula.jpg" alt="Estudantes trabalhando em equipe">
-                    <p>5. O Futuro da Educação</p>
-                </div>
-
-        
-                <!-- Imagem 6 -->
-                <div class="mod kaisen.JPG">
-                    <img src="" alt="Escola ideal e criativa">
-                    <p>6. A Escola que Queremos</p>
-                </div>
-
-                             <!-- Imagem 7 -->
-                <div class="card-img">
-                    <img src="la final.JPG" alt="Estudantes trabalhando em equipe">
-                    <p>5. O Futuro da Educação</p>
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>&copy; 2026 - Desenvolvido para o Projeto Game do Saber</p>
-    </footer>
+<footer>
+<h3>🏆 O Game do Saber</h3>
+<p>Aprender é a maior conquista!</p>
+</footer>
 
 </body>
 </html>
-
